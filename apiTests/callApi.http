@@ -1,0 +1,47 @@
+@host = http://localhost:3001
+@token = 1
+
+###
+GET {{host}}/contracts/1
+content-type: application/json
+profile_id: 1
+
+###
+GET {{host}}/contracts
+content-type: application/json
+profile_id: 1
+
+###
+GET {{host}}/jobs/unpaid
+content-type: application/json
+profile_id: 1
+
+###
+POST {{host}}/jobs/2/pay
+content-type: application/json
+profile_id: 1
+
+# { "amount" : 0.5 }
+
+###
+POST {{host}}/balances/deposit/1
+content-type: application/json
+profile_id: 1
+
+{ "depositValue" : 40}
+
+
+# /admin/best-profession?start=<date>&end=<date>
+
+###
+GET {{host}}/admin/best-profession?start=1010&end=1111
+content-type: application/json
+profile_id: 1
+
+
+# /admin/best-clients?start=<date>&end=<date>&limit=<integer>
+
+###
+GET {{host}}/admin/best-clients?start=1010&end=1111&limit=2
+content-type: application/json
+profile_id: 1
