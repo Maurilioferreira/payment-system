@@ -34,7 +34,7 @@ profile_id: 1
 # /admin/best-profession?start=<date>&end=<date>
 
 ###
-GET {{host}}/admin/best-profession?start=1010&end=1111
+GET {{host}}/admin/best-profession?start=2020-08-10 19:11:26.737&end=2020-08-24 23:11:26.737
 content-type: application/json
 profile_id: 1
 
@@ -42,6 +42,6 @@ profile_id: 1
 # /admin/best-clients?start=<date>&end=<date>&limit=<integer>
 
 ###
-GET {{host}}/admin/best-clients?start=1010&end=1111&limit=2
+GET {{host}}/admin/best-clients?start=2020-08-10 19:11:26.737&end=2020-08-24 23:11:26.737&limit=3
 content-type: application/json
 profile_id: 1
